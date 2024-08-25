@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        car = new Array(2)
+        for(var row = 0; row < car.length; row++){
+            car[row] = new Array(4)
+            
+            car[row][0] = prompt("Enter car name")
+            car[row][1] = prompt("Enter car color")
+            car[row][2] = prompt("Quantity of car")
+            car[row][3] = prompt("UnitPrice of a car")
+        }
+        
+        document.write(`<table>
+            <tr>
+                <th>car name </th>
+                <th>color</th>
+                <th>quantity </th>
+                <th>Unit price </th>
+                <th>total</th>
+            </tr>`)
+        for(var i = 0; i < 4; i++){
+        
+            document.write(`</tr>`)
+            for(var j = 0; j < 4; j++){
+                document.write(`<td> ${car[i][j]} </td>`)
+            
+        }
+       document.write("</tr>")
+}
+document.write("</table>")
+
+
+
+        // car[0] = 'Benz'
+        // car[2] = 'Toyota'
+        // car[1] = 'Lexus'
+        // document.write(car)
+
+    </script>
+</body>
+</html>
